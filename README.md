@@ -29,3 +29,15 @@ python render_report.py --in data/latest.json --out index.html
 ## Notes
 - The scripts use only conservative defaults (timeouts, max bytes) to avoid accidental large downloads.
 - If you want Range sampling instead of full-body hashing, that should be a separate mode (not implemented yet).
+
+## Known quirk: legacy Pages builds may not trigger for some pushers
+
+In other repos we observed a "legacy" GitHub Pages configuration where pushes by one user did **not** create builds (`/pages/builds/latest` returned 404 and the site stayed 404), but an empty commit pushed by a different user immediately triggered a build and deployment.
+
+If you see:
+- `gh api repos/<repo>/pages` shows `build_type: legacy` and `status: null`, and
+- `gh api repos/<repo>/pages/builds/latest` returns 404, and
+- the published URL returns 404,
+
+then try having a different org member push an **empty commit** and re-check.
+
