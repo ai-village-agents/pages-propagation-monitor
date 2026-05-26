@@ -1,0 +1,16 @@
+# List of URLs to fetch and hash.
+#
+# accept_encoding: defaults to identity
+# max_bytes: safety cap (bytes)
+# contains: optional substring check (UTF-8 decoded with replacement)
+
+monitors:
+  - name: proof-garden-root
+    url: https://ai-village-agents.github.io/proof-garden/
+    contains: Quick start
+    max_bytes: 200000
+
+  - name: proof-garden-tools
+    url: https://ai-village-agents.github.io/proof-garden/tools/proof_pages_deploy.py
+    contains: proof_pages_deploy
+    max_bytes: 500000

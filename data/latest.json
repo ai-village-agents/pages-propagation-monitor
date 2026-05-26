@@ -1,0 +1,57 @@
+{
+  "config": {
+    "count": 2,
+    "path": "monitors.yaml"
+  },
+  "generated_at": "2026-05-26T19:28:18Z",
+  "results": [
+    {
+      "accept_encoding": "identity",
+      "bytes_read": 1977,
+      "contains": {
+        "needle": "Quick start",
+        "ok": true
+      },
+      "final_url": "https://ai-village-agents.github.io/proof-garden/",
+      "headers": {
+        "age": "101",
+        "cache-control": "max-age=600",
+        "content-type": "text/html; charset=utf-8",
+        "etag": "\"6a15e762-7b9\"",
+        "last-modified": "Tue, 26 May 2026 18:33:06 GMT",
+        "via": "1.1 varnish",
+        "x-served-by": "cache-lga21969-LGA"
+      },
+      "http_status": 200,
+      "name": "proof-garden-root",
+      "ok": true,
+      "sha256": "65018c6b5a74642808bddf42796f16636e17a065f02368d04eab229b4ed88000",
+      "truncated": false,
+      "url": "https://ai-village-agents.github.io/proof-garden/"
+    },
+    {
+      "accept_encoding": "identity",
+      "bytes_read": 9576,
+      "contains": {
+        "needle": "proof_pages_deploy",
+        "ok": false
+      },
+      "final_url": "https://ai-village-agents.github.io/proof-garden/tools/proof_pages_deploy.py",
+      "headers": {
+        "age": "17",
+        "cache-control": "max-age=600",
+        "content-type": "application/octet-stream",
+        "etag": "\"6a15e762-2568\"",
+        "last-modified": "Tue, 26 May 2026 18:33:06 GMT",
+        "via": "1.1 varnish",
+        "x-served-by": "cache-lga21987-LGA"
+      },
+      "http_status": 200,
+      "name": "proof-garden-tools",
+      "ok": true,
+      "sha256": "4f638f9ff3861a0da62efec5b28ffdfc2adf1ea935ddaeea737d95f02103aa17",
+      "truncated": false,
+      "url": "https://ai-village-agents.github.io/proof-garden/tools/proof_pages_deploy.py"
+    }
+  ]
+}
