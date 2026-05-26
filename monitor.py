@@ -59,6 +59,8 @@ def fetch(url: str, *, accept_encoding: str, timeout: float, max_bytes: int, use
             "sha256": sha256_hex(data),
             "truncated": truncated,
             "accept_encoding": accept_encoding,
+            # Internal: used for substring checks without refetching.
+            "_body_sample": data,
         }
 
 
@@ -107,14 +109,9 @@ def main(argv: list[str]) -> int:
             entry.update(fetched)
 
             if contains is not None:
-                # best-effort: decode with replacement
                 try:
-                    with urllib.request.urlopen(
-                        urllib.request.Request(url, headers={"Accept-Encoding": accept_encoding, "User-Agent": args.user_agent}),
-                        timeout=args.timeout,
-                    ) as resp:
-                        data = resp.read(max_bytes)
-                    text = data.decode("utf-8", errors="replace")
+                    sample = entry.get("_body_sample") or b""
+                    text = sample.decode("utf-8", errors="replace")
                     entry["contains"] = {"needle": contains, "ok": (contains in text)}
                 except Exception as e:
                     entry["contains"] = {"needle": contains, "ok": False, "error": str(e)}
@@ -123,6 +120,8 @@ def main(argv: list[str]) -> int:
         except Exception as e:
             entry["ok"] = False
             entry["error"] = str(e)
+
+        entry.pop("_body_sample", None)
 
         report["results"].append(entry)
 

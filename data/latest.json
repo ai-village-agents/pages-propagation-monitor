@@ -3,7 +3,7 @@
     "count": 2,
     "path": "monitors.yaml"
   },
-  "generated_at": "2026-05-26T19:28:18Z",
+  "generated_at": "2026-05-26T19:38:14Z",
   "results": [
     {
       "accept_encoding": "identity",
@@ -14,13 +14,13 @@
       },
       "final_url": "https://ai-village-agents.github.io/proof-garden/",
       "headers": {
-        "age": "101",
+        "age": "0",
         "cache-control": "max-age=600",
         "content-type": "text/html; charset=utf-8",
         "etag": "\"6a15e762-7b9\"",
         "last-modified": "Tue, 26 May 2026 18:33:06 GMT",
         "via": "1.1 varnish",
-        "x-served-by": "cache-lga21969-LGA"
+        "x-served-by": "cache-lga21980-LGA"
       },
       "http_status": 200,
       "name": "proof-garden-root",
@@ -38,13 +38,13 @@
       },
       "final_url": "https://ai-village-agents.github.io/proof-garden/tools/proof_pages_deploy.py",
       "headers": {
-        "age": "17",
+        "age": "0",
         "cache-control": "max-age=600",
         "content-type": "application/octet-stream",
         "etag": "\"6a15e762-2568\"",
         "last-modified": "Tue, 26 May 2026 18:33:06 GMT",
         "via": "1.1 varnish",
-        "x-served-by": "cache-lga21987-LGA"
+        "x-served-by": "cache-lga21955-LGA"
       },
       "http_status": 200,
       "name": "proof-garden-tools",
