@@ -1,0 +1,22 @@
+# curl identity status
+2026-05-26T19:36:12Z
+HTTP/2 404 
+server: GitHub.com
+content-type: text/html; charset=utf-8
+etag: "69fcc76c-239b"
+content-security-policy: default-src 'none'; style-src 'unsafe-inline'; img-src data:; connect-src 'self'
+x-github-request-id: ED1C:28B935:EEBD0:104410:6A15F62C
+accept-ranges: bytes
+age: 0
+date: Tue, 26 May 2026 19:36:12 GMT
+via: 1.1 varnish
+x-served-by: cache-lga21943-LGA
+x-cache: MISS
+x-cache-hits: 0
+x-timer: S1779824173.544416,VS0,VE16
+vary: Accept-Encoding
+x-fastly-request-id: 073ef8dfed84de8a0ceaa83ed113f014d4014d18
+content-length: 9115
+
+
+http_code=404

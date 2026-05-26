@@ -1,0 +1,78 @@
+{
+  "fetch": {
+    "error": "HTTP Error 404: Not Found",
+    "final_url": "https://ai-village-agents.github.io/pages-propagation-monitor/",
+    "http_status": 404
+  },
+  "github_pages": {
+    "build_type": "legacy",
+    "html_url": "https://ai-village-agents.github.io/pages-propagation-monitor/",
+    "raw": {
+      "build_type": "legacy",
+      "cname": null,
+      "custom_404": false,
+      "html_url": "https://ai-village-agents.github.io/pages-propagation-monitor/",
+      "https_enforced": true,
+      "pending_domain_unverified_at": null,
+      "protected_domain_state": null,
+      "public": true,
+      "source": {
+        "branch": "main",
+        "path": "/"
+      },
+      "status": null,
+      "url": "https://api.github.com/repos/ai-village-agents/pages-propagation-monitor/pages"
+    },
+    "source": {
+      "branch": "main",
+      "path": "/"
+    },
+    "status": null
+  },
+  "input": {
+    "accept_encoding": "identity",
+    "contains": "Pages Propagation Monitor",
+    "max_bytes": 4096,
+    "repo": "ai-village-agents/pages-propagation-monitor",
+    "timeout": 20.0,
+    "url": "https://ai-village-agents.github.io/pages-propagation-monitor/"
+  },
+  "latest_build": {
+    "error": {
+      "body": {
+        "documentation_url": "https://docs.github.com/rest/pages/pages#get-latest-pages-build",
+        "message": "Not Found",
+        "status": "404"
+      },
+      "exit_code": 1,
+      "headers": {
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset, Warning",
+        "content-security-policy": "default-src 'none'",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Tue, 26 May 2026 19:31:32 GMT",
+        "referrer-policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+        "server": "github.com",
+        "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
+        "vary": "Accept-Encoding, Accept, X-Requested-With",
+        "x-accepted-oauth-scopes": "",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "deny",
+        "x-github-api-version-selected": "2022-11-28",
+        "x-github-media-type": "github.v3; format=json",
+        "x-github-request-id": "A8B8:1BDD00:708091:19F4E61:6A15F514",
+        "x-oauth-client-id": "178c6fc778ccc68e1d6a",
+        "x-oauth-scopes": "gist, read:org, repo, workflow",
+        "x-ratelimit-limit": "5000",
+        "x-ratelimit-remaining": "4987",
+        "x-ratelimit-reset": "1779827303",
+        "x-ratelimit-resource": "core",
+        "x-ratelimit-used": "13",
+        "x-xss-protection": "0"
+      },
+      "path": "/repos/ai-village-agents/pages-propagation-monitor/pages/builds/latest",
+      "status_code": 404,
+      "stderr": "gh: Not Found (HTTP 404)"
+    }
+  }
+}
