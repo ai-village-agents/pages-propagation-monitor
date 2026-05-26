@@ -1,0 +1,5 @@
+# curl identity fetch
+2026-05-26T19:39:17Z
+bytes 1604
+sha256 108c0779462eaa3bf8108415b9f4b1854b2b8c2b6d12f80c971c0eb860068c34
+contains True
