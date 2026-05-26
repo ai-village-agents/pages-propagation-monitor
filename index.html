@@ -5,25 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Pages Propagation Monitor</title>
   <style>
-    body { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; margin: 24px; }
-    table { border-collapse: collapse; width: 100%; }
-    th, td { border: 1px solid #ddd; padding: 8px; vertical-align: top; }
-    th { background: #f6f6f6; text-align: left; }
-    code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 12px; }
+    body { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; margin: 24px; background: #f9fafb; color: #0f172a; }
+    table { border-collapse: collapse; width: 100%; box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08); background: white; }
+    th, td { border: 1px solid #e5e7eb; padding: 10px; vertical-align: top; }
+    th { background: #f1f5f9; text-align: left; font-weight: 600; }
+    tr:nth-child(even) { background: #f8fafc; }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 12px; word-break: break-all; white-space: pre-wrap; }
+    .label { display: inline-block; font-size: 11px; color: #475569; text-transform: lowercase; margin-right: 4px; padding: 2px 6px; border-radius: 999px; background: #e2e8f0; }
+    .hdr-block { margin-bottom: 8px; }
+    .hdr-title { font-weight: 600; margin-bottom: 2px; text-transform: capitalize; }
+    .hdr-meta { margin-top: 6px; color: #475569; font-size: 12px; }
+    .contains.ok { color: #0f5132; }
+    .contains.fail { color: #b91c1c; }
+    .contains.summary { margin-top: 6px; font-weight: 600; }
+    a { color: #0ea5e9; }
   </style>
 </head>
 <body>
   <h1>Pages Propagation Monitor</h1>
-  <p>Generated at: <code>2026-05-26T19:38:14Z</code></p>
+  <p>Generated at: <code>2026-05-26T19:48:20Z</code></p>
   <table>
     <thead>
       <tr>
-        <th>Name</th><th>URL</th><th>Status</th><th>OK</th><th>SHA-256</th><th>Last-Modified</th><th>Accept-Encoding</th><th>Contains</th>
+        <th>Name</th><th>URL</th><th>Status</th><th>OK</th><th>Probe</th><th>Hashes</th><th>Bytes</th><th>Headers</th><th>Contains</th>
       </tr>
     </thead>
     <tbody>
-      <tr><td>proof-garden-root</td><td><a href="https://ai-village-agents.github.io/proof-garden/">link</a></td><td>200</td><td>OK</td><td><code>65018c6b5a74642808bddf42796f16636e17a065f02368d04eab229b4ed88000</code></td><td>Tue, 26 May 2026 18:33:06 GMT</td><td>identity</td><td>Quick start: True</td></tr>
-<tr><td>proof-garden-tools</td><td><a href="https://ai-village-agents.github.io/proof-garden/tools/proof_pages_deploy.py">link</a></td><td>200</td><td>OK</td><td><code>4f638f9ff3861a0da62efec5b28ffdfc2adf1ea935ddaeea737d95f02103aa17</code></td><td>Tue, 26 May 2026 18:33:06 GMT</td><td>identity</td><td>proof_pages_deploy: False</td></tr>
+      <tr><td>proof-garden-root</td><td><a href="https://ai-village-agents.github.io/proof-garden/">link</a></td><td>200</td><td>OK</td><td>full</td><td><code>65018c6b5a74642808bddf42796f16636e17a065f02368d04eab229b4ed88000</code></td><td>1977 bytes</td><td><div><span class='label'>cache-control</span> max-age=600</div><div><span class='label'>age</span> 58</div><div><span class='label'>via</span> 1.1 varnish</div><div><span class='label'>x-served-by</span> cache-lga21933-LGA</div><div><span class='label'>etag</span> &quot;6a15e762-7b9&quot;</div><div><span class='label'>last-modified</span> Tue, 26 May 2026 18:33:06 GMT</div><div class='hdr-meta'>Accept-Encoding: identity</div></td><td><div class='contains ok'>Quick start: ok</div></td></tr>
+<tr><td>proof-garden-tools</td><td><a href="https://ai-village-agents.github.io/proof-garden/tools/proof_pages_deploy.py">link</a></td><td>200</td><td>OK</td><td>full</td><td><code>4f638f9ff3861a0da62efec5b28ffdfc2adf1ea935ddaeea737d95f02103aa17</code></td><td>9576 bytes</td><td><div><span class='label'>cache-control</span> max-age=600</div><div><span class='label'>age</span> 58</div><div><span class='label'>via</span> 1.1 varnish</div><div><span class='label'>x-served-by</span> cache-lga21935-LGA</div><div><span class='label'>etag</span> &quot;6a15e762-2568&quot;</div><div><span class='label'>last-modified</span> Tue, 26 May 2026 18:33:06 GMT</div><div class='hdr-meta'>Accept-Encoding: identity</div></td><td><div class='contains ok'>DEFAULT_REPO: ok</div></td></tr>
+<tr><td>proof-garden-tools-raw</td><td><a href="https://raw.githubusercontent.com/ai-village-agents/proof-garden/main/tools/proof_pages_deploy.py">link</a></td><td>200</td><td>OK</td><td>full</td><td><code>9d0193634dd05dc4c5744d14158f36e7769e065fb9670f1e7e6611eb9473f0be</code></td><td>9917 bytes</td><td><div><span class='label'>cache-control</span> max-age=300</div><div><span class='label'>via</span> 1.1 varnish</div><div><span class='label'>x-served-by</span> cache-lga21992-LGA</div><div><span class='label'>etag</span> &quot;0cdec9def531abc2a2bcb384bf838d541f67463cf4d0263eb7527b33e9b86fe9&quot;</div><div class='hdr-meta'>Accept-Encoding: identity</div></td><td><div class='contains ok'>DEFAULT_REPO: ok</div></td></tr>
+<tr><td>proof-garden-root-range</td><td><a href="https://ai-village-agents.github.io/proof-garden/">link</a></td><td>head: 206<br>tail: 206</td><td>OK</td><td>range</td><td><div><span class='label'>head</span> <code>539904fb9824dc4d7c98b8a9ad140ec804cec3a6d2ed507217afe09ab2b41c05</code></div><div><span class='label'>tail</span> <code>452fb32fa651e0226c7b57bf88e727133bcac0a8f4bc0bdc6bc6ab8dcdb845c4</code></div></td><td><div><span class='label'>head</span> 1024 bytes</div><div><span class='label'>tail</span> 1024 bytes</div></td><td><div class='hdr-block'><div class='hdr-title'>head</div><div><span class='label'>content-range</span> bytes 0-1023/1977</div><div><span class='label'>content-length</span> 1024</div><div><span class='label'>cache-control</span> max-age=600</div><div><span class='label'>age</span> 58</div><div><span class='label'>via</span> 1.1 varnish</div><div><span class='label'>x-served-by</span> cache-lga21932-LGA</div><div><span class='label'>etag</span> &quot;6a15e762-7b9&quot;</div><div><span class='label'>last-modified</span> Tue, 26 May 2026 18:33:06 GMT</div></div><div class='hdr-block'><div class='hdr-title'>tail</div><div><span class='label'>content-range</span> bytes 953-1976/1977</div><div><span class='label'>content-length</span> 1024</div><div><span class='label'>cache-control</span> max-age=600</div><div><span class='label'>age</span> 58</div><div><span class='label'>via</span> 1.1 varnish</div><div><span class='label'>x-served-by</span> cache-lga21936-LGA</div><div><span class='label'>etag</span> &quot;6a15e762-7b9&quot;</div><div><span class='label'>last-modified</span> Tue, 26 May 2026 18:33:06 GMT</div></div><div class='hdr-meta'>Accept-Encoding: identity</div></td><td></td></tr>
     </tbody>
   </table>
 </body>

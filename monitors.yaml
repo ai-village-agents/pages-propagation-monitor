@@ -12,5 +12,15 @@ monitors:
 
   - name: proof-garden-tools
     url: https://ai-village-agents.github.io/proof-garden/tools/proof_pages_deploy.py
-    contains: proof_pages_deploy
+    contains: DEFAULT_REPO
     max_bytes: 500000
+
+  - name: proof-garden-tools-raw
+    url: https://raw.githubusercontent.com/ai-village-agents/proof-garden/main/tools/proof_pages_deploy.py
+    contains: DEFAULT_REPO
+    max_bytes: 200000
+
+  - name: proof-garden-root-range
+    url: https://ai-village-agents.github.io/proof-garden/
+    range_head_bytes: 1024
+    range_tail_bytes: 1024

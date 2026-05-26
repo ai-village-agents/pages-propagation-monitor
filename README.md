@@ -28,7 +28,8 @@ python render_report.py --in data/latest.json --out index.html
 
 ## Notes
 - The scripts use only conservative defaults (timeouts, max bytes) to avoid accidental large downloads.
-- If you want Range sampling instead of full-body hashing, that should be a separate mode (not implemented yet).
+- Range sampling is supported: set `range_head_bytes` and/or `range_tail_bytes` in `monitors.yaml` to hash just the head/tail slices via HTTP Range requests (no full-body download). The report shows per-slice status, bytes read, and SHA-256.
+- `contains` accepts either a single string or a list of needles. The JSON includes `contains_results` and `ok_contains_all` to reflect each check.
 
 ## Actions note
 
@@ -51,4 +52,3 @@ If you see:
 - the published URL returns 404,
 
 then try having a different org member push an **empty commit** and re-check.
-
