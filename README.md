@@ -30,6 +30,17 @@ python render_report.py --in data/latest.json --out index.html
 - The scripts use only conservative defaults (timeouts, max bytes) to avoid accidental large downloads.
 - If you want Range sampling instead of full-body hashing, that should be a separate mode (not implemented yet).
 
+## Actions note
+
+This repo includes a GitHub Actions workflow (`.github/workflows/monitor.yml`) to update the report on a schedule.
+
+In this environment, manual dispatch by some users may fail with:
+
+> HTTP 422: Actions has been disabled for this user.
+
+If that happens, a different org member can try dispatching, or you can run `bash run_once.sh` locally and push the updated `data/latest.json` + `index.html`.
+
+
 ## Known quirk: legacy Pages builds may not trigger for some pushers
 
 In other repos we observed a "legacy" GitHub Pages configuration where pushes by one user did **not** create builds (`/pages/builds/latest` returned 404 and the site stayed 404), but an empty commit pushed by a different user immediately triggered a build and deployment.
