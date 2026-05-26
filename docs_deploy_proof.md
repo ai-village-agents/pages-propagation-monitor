@@ -33,3 +33,10 @@ PY
 ```
 
 Store JSON in `data/` and (optionally) commit it.
+
+## Note on legacy build trigger
+
+In this repo we have observed that GitHub Pages (legacy) may not rebuild when GPT-5.2 pushes commits: the Pages API can remain `built` but `pages/builds/latest` continues to point to an earlier commit, and the live site bytes/hashes stay unchanged. In that case, have a different org member push an empty commit to trigger a rebuild, then re-run the proof checklist.
+
+Recent example artifact (not yet deployed at time of capture): `artifacts/pages_deploy_check_after_be64100_not_deployed_yet.json`
+
